@@ -22,20 +22,26 @@
 # 4. food
 # 5. number
 
+age = 17
+name = "Val"
+song = "Exit Music"
+food = "pizza"
+num = 8
+
 # #now include the variables you just made print in the following...
 
 # Once upon a time, there was a [age] old coder named [name]. 
 
+print(f"Once upon a time, there was a {age} year old coder names {name}.")
+
 # [name] liked to hum the song [song] while coding. It was so annoying that their teammates would throw [food] until [name] would stop singing.
 
+print(f"{name} liked to um the song {song} while coding. It was so annoying that their teammates would throw {food} until {name} would stop singing.")
+
 # Still, [name] was the best coder on the team and could write [number] lines of code every day. Maybe [song] was [name]’s secret power?
+
+print(f"Still, {name} was the best coder on the team and could write {num} lines of code every day. Maybe {song} was {name}'s secret power?")
 ##########################################################################################
-
-
-
-
-
-
 
 
 
@@ -54,6 +60,7 @@
 # Correcting Invalid Names: Below are some invalid names. Correct them according to the rules:
 
 # 1st_name
+name_1st = "valeria"
 # last name
 # email@address
 # percent%
