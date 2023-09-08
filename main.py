@@ -22,25 +22,25 @@
 # 4. food
 # 5. number
 
-age = 17
-name = "Val"
-song = "Exit Music"
-food = "pizza"
-num = 8
+# age = 17 **
+# name = "Val"
+# song = "Exit Music"
+# food = "pizza"
+# num = 8 **
 
 # #now include the variables you just made print in the following...
 
 # Once upon a time, there was a [age] old coder named [name]. 
 
-print(f"Once upon a time, there was a {age} year old coder names {name}.")
+# print(f"Once upon a time, there was a {age} year old coder names {name}.")
 
 # [name] liked to hum the song [song] while coding. It was so annoying that their teammates would throw [food] until [name] would stop singing.
 
-print(f"{name} liked to um the song {song} while coding. It was so annoying that their teammates would throw {food} until {name} would stop singing.")
+# print(f"{name} liked to um the song {song} while coding. It was so annoying that their teammates would throw {food} until {name} would stop singing.")
 
 # Still, [name] was the best coder on the team and could write [number] lines of code every day. Maybe [song] was [name]’s secret power?
 
-print(f"Still, {name} was the best coder on the team and could write {num} lines of code every day. Maybe {song} was {name}'s secret power?")
+# print(f"Still, {name} was the best coder on the team and could write {num} lines of code every day. Maybe {song} was {name}'s secret power?")
 ##########################################################################################
 
 
@@ -78,17 +78,15 @@ name_1st = "valeria"
 
 # Identify Valid and Invalid Names: Identify which of the following names are valid or invalid according to the rules:
 
-# first_name
-# lastName
-# email_address
-# percentage
-# variable_name
-# 1_variable
-# email@address
-# percentage%
-# i
-
-
+# first_name - valid
+# lastName - valid
+# email_address - valid
+# percentage - valid
+# variable_name - valid
+# 1_variable - invalid
+# email@address - invalid 
+# percentage% - invalid
+# i - valid
 
 
 # Declare two variables, called name and age.
@@ -123,33 +121,70 @@ name_1st = "valeria"
 # 2. Floating point numbers in Python are notable because they have a decimal point in them, or use an exponential (e) to define the number. For example 2.0 and -2.1 are examples of floating point numbers. 4E2 (4 times 10 to the power of 2) is also an example of a floating point number in Python.
 
 # slides 10 -12
+num1 = 55
+num2 = -55
+print(num1)
+print(num2)
+print(num1 + num2)
+print(type(num1))
+
+#python knows a lot of number types implicityly without you telling it
+# telling it(explicit)
+#floats - deal w decimal numbers 
+num3 = 3.14
+print(num3)
+print(type(num3))
+
+#explicit types
+# age = "30" **
+# print(type(age))
+# mom_age = int(input("How old is ur mom?"))
+# print(type(mom_age))
+# siblings_age = int(input("How old is your sibling?"))
+# print(type(siblings_age))
+
+# print(siblings_age + mom_age) **
+
 # Integers Practice
 # Declare a numeric variable named int_num that contains a value of integer type of your choice.
 # Print the data type of that variable.
 
+int_num = 90
+print(type(int_num))
 
 # Floats Practice
 # Declare a numeric variable named decimal_num that contains a value of float type of your choice.
 # Print the data type of that variable.
 
-# ata Types Practice
+decimal_num = 3.1459
+print(type(decimal_num))
+
+# data Types Practice
 # What type is the result of the sum of 7.5 + 2.5? Write the code to verify it.
-# To do this, create two variables:
-# num1 = 7.5
-# num2 = 2.5
-# Next, print on the screen the data type that results from the sum of both numbers.
+seven = 7.5
+two = 2.5
+
+print(seven + two)
 
 #################################Data Type conversions####################
 # slides 12 -19
 # Data Type Conversions Practice #1
 # Convert the value of num1 to an integer and print the resulting data type.
 
+num1=int(7897)
+print(type(num1))
+
 #   Data Type Conversions Practice #2
 # Convert the value of num2 to a float and print the resulting data type.
+
+num2 = float(-55.998)
+print(type(num2))
 
 #   Data Type Conversions Practice #3
 # Add the values of num1 and num2.
 # Do not modify the value of variables already declared, but apply the necessary conversions within the print() function.
+
+print(num1 + num2)
 
 #################################formatting strings####################
 # slide 19 -22
@@ -161,16 +196,20 @@ name_1st = "valeria"
 # Remember that the precision of your answer (spaces, spelling and punctuation) is very important to arrive at the correct result.
 
 
-# associate_name = "Jesse Pinkman"
-# associate_number = 399058
+associate_name = "Jesse Pinkman"
+associate_number = 399058
 
-# Dear (associate_name), your associate number is: (associate_number)
+print(f"Dear {associate_name}, your associate number is: {associate_number}.")
 
 # Strings Formatting Practice #2
 # Tell the user the amount of points earned within the following phrase:
 # "You have earned (new_points) points! In total, you have accumulated (total_points) points"
 # Remember that the precision of your answer (spaces, spelling and punctuation) is very important to arrive at the correct result
 
+new_points = 50 
+total_points = 250
+
+print(f"You have earned {new_points} points! In total, you have accumulated {total_points} points.")
 
 # Strings Formatting Practice #3
 # Tell the user the amount of points earned within the following phrase:
@@ -178,8 +217,13 @@ name_1st = "valeria"
 # This time, the amount of points accumulated (total_points) will be equal to the previous_points plus the new_points.
 # Remember that the precision of your answer (spaces, spelling and punctuation) is very important to arrive at the correct result.
 
-# previous_points = 875
-# new_points = 350
+previous_points = 875
+new_points = 350
+total_points = previous_points + new_points
+
+print(f"You have earned {new_points} points! In total, you have accumulated {total_points} points.")
+
+
 
 #################################Mathematical operations####################
 # slides 20 -24
