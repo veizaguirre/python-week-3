@@ -1,3 +1,4 @@
+import math
 # # Week  
 # # This week we will work on :
 # # Working With Strings
@@ -171,20 +172,20 @@ print(seven + two)
 # Data Type Conversions Practice #1
 # Convert the value of num1 to an integer and print the resulting data type.
 
-num1=int(7897)
-print(type(num1))
+# num1=int(7897) **
+# print(type(num1)) **
 
 #   Data Type Conversions Practice #2
 # Convert the value of num2 to a float and print the resulting data type.
 
-num2 = float(-55.998)
-print(type(num2))
+# num2 = float(-55.998) **
+# print(type(num2)) **
 
-#   Data Type Conversions Practice #3
-# Add the values of num1 and num2.
-# Do not modify the value of variables already declared, but apply the necessary conversions within the print() function.
+# #   Data Type Conversions Practice #3
+# # Add the values of num1 and num2.
+# # Do not modify the value of variables already declared, but apply the necessary conversions within the print() function.
 
-print(num1 + num2)
+# print(num1 + num2) **
 
 #################################formatting strings####################
 # slide 19 -22
@@ -196,20 +197,20 @@ print(num1 + num2)
 # Remember that the precision of your answer (spaces, spelling and punctuation) is very important to arrive at the correct result.
 
 
-associate_name = "Jesse Pinkman"
-associate_number = 399058
+# associate_name = "Jesse Pinkman" **
+# associate_number = 399058
 
-print(f"Dear {associate_name}, your associate number is: {associate_number}.")
+# print(f"Dear {associate_name}, your associate number is: {associate_number}.") **
 
 # Strings Formatting Practice #2
 # Tell the user the amount of points earned within the following phrase:
 # "You have earned (new_points) points! In total, you have accumulated (total_points) points"
 # Remember that the precision of your answer (spaces, spelling and punctuation) is very important to arrive at the correct result
 
-new_points = 50 
-total_points = 250
+# new_points = 50 **
+# total_points = 250
 
-print(f"You have earned {new_points} points! In total, you have accumulated {total_points} points.")
+# print(f"You have earned {new_points} points! In total, you have accumulated {total_points} points.") **
 
 # Strings Formatting Practice #3
 # Tell the user the amount of points earned within the following phrase:
@@ -217,11 +218,11 @@ print(f"You have earned {new_points} points! In total, you have accumulated {tot
 # This time, the amount of points accumulated (total_points) will be equal to the previous_points plus the new_points.
 # Remember that the precision of your answer (spaces, spelling and punctuation) is very important to arrive at the correct result.
 
-previous_points = 875
-new_points = 350
-total_points = previous_points + new_points
+# previous_points = 875 **
+# new_points = 350
+# total_points = previous_points + new_points
 
-print(f"You have earned {new_points} points! In total, you have accumulated {total_points} points.")
+# print(f"You have earned {new_points} points! In total, you have accumulated {total_points} points.") **
 
 
 
@@ -243,70 +244,112 @@ print(f"You have earned {new_points} points! In total, you have accumulated {tot
 # #ceil method
 # #sqrt method
 
+
+
 # Here are some practice problems for students based on the operations :
 
 # ### Addition
 # 1. Add the numbers 145 and 256.
 # 2. What is the sum of 873 and 1,287?
 
+print(145+256)
+print(873+1287)
+
 # ### Multiplication
 # 3. Multiply 13 by 24.
 # 4. What is the product of 17 and 19?
+
+print(13 * 24)
+print(17 * 19)
 
 # ### Division
 # 5. Divide 528 by 6.
 # 6. What is the result when 1,234 is divided by 4?
 
+print(528/6)
+print(1234/4)
+
 # ### Modulo
 # 7. What is the remainder when 200 is divided by 7?
 # 8. If \( x = 145 \) modulo 12, find the value of \( x \).
+
+print(200 % 7)
+x = 145
+print(x%12)
 
 # ### Powers
 # 9. Calculate \( 7^3 \).
 # 10. Find the value of \( 5^4 \).
 
+print(7**3)
+print(5**4)
+
 # ### Get the max and min of a number
 # 11. Which is greater: 345 or 453?
 # 12. Out of 1,002 and 1,020, which is the lesser number?
+
+a = 345
+b = 453
+print(max(a, b))
+
+a = 1002
+b = 1020
+print(min(a, b))
 
 # ### Round a number
 # 13. Round 17.56 to the nearest whole number.
 # 14. Round 123.789 to the nearest tenth.
 
+print(round(17.56))
+print(round(123.789))
+
 # ### Absolute Value
 # 15. Find the absolute value of -134.
 # 16. What is the absolute value of -15.7?
+
+print(abs(-134))
+print(abs(-15.7))
 
 # ### Order of Operations
 # 17. Evaluate the expression: \( 5 + 3 \times 4 - 2^2 \).
 # 18. Calculate \( 12 \div 4 + 7 - 2 \times 3 \).
 
+print(5+3*4-2**2)
+print(int(12/4+7-2*3))
+
 # ### Special Math Libraries
 # **Floor Method**
 # 19. Round down the number 17.89 to the nearest whole number.
 # 20. What is the floor value of 45.01?
+print(math.floor(17.89))
+print(math.floor(45.01))
 
 # **Ceil Method**
 # 21. Round up the number 23.01 to the nearest whole number.
 # 22. What is the ceiling value of 67.67?
+print(math.ceil(23.01))
+print(math.ceil(67.67))
 
 # **Sqrt Method**
 # 23. Find the square root of 144.
 # 24. Calculate the square root of 169.
+print(math.sqrt(144))
+print(math.sqrt(169))
 
 # Note: For the problems involving floor, ceil, and sqrt, students will need to use the `math` library functions in Python.
 
 
 # Print on the screen the floor division of the following two numbers: 874 divided by 27
 
-
+print(874//27)
 
 # Print on the screen the modulus of 456 divided by 33
 
-
+print(456%33)
 
 # Calculate and print the square root of 783
 
+print(math.sqrt(783))
 
 
 
@@ -320,16 +363,20 @@ print(f"You have earned {new_points} points! In total, you have accumulated {tot
 # # basic math calculator
 # #ask the user for 2 numbers
 # # print out a statement where you:
+
+ask = float(input("give me a number"))
+ask2 = float(input("give me another one"))
+
 # # add them together
+print(ask + ask2)
 # #multiply
+print(ask * ask2)
 # # find the max number
+print(max(ask, ask2))
 # # find the remainder of the numbers
+print(ask%ask2)
 # #round one number
-
-
-
-
-
+print(round(ask))
 
 
 
